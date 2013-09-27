@@ -1,0 +1,70 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace JYT
+{
+
+    public class Test
+    {
+        public void Show()
+        {
+            Console.WriteLine("江燕婷");
+        }
+        static public void Add()
+        {
+            Console.WriteLine("微波看不懂呀...");
+        }
+        
+        public void Add2()
+        {
+            Console.WriteLine("微波看不懂呀...");
+        }
+    }
+    public class SequencedList<T>
+    {
+        private T[] items;
+        private int count = 0;
+        private int capacity = 0;
+        public SequencedList(int c)
+        {
+            capacity = c;
+            items = new T[capacity];
+            count = 0;
+        }
+        public SequencedList(T[] itemArray)
+        {
+            count = itemArray.Length;
+
+        }
+    }
+    
+}
+
+using System;
+using JYT;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+namespace JYT1
+{
+    
+    class Program
+    {
+        static void Taijun()
+        {
+            Console.WriteLine("aoe刘子熊");
+        }
+        static void Main(string[] args)
+        {
+            JYT.Test a = new Test();
+            a.Show();
+            a.Add2();
+            Taijun();
+
+        }
+    }
+}
